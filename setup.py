@@ -7,6 +7,7 @@ st.setup(name='spew',
          packages=st.find_packages(),
          entry_points={
             'afew.filter': [
+                'DistributionFilter= spew.distribution:DistributionFilter',
                 'StickyFilter = spew.sticky:StickyFilter',
             ],
         },
